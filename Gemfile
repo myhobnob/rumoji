@@ -5,3 +5,6 @@ gemspec
 
 gem 'rake'
 gem 'minitest'
+gem 'pry'
+gem 'pry-rails'
+gem 'pry-remote'
