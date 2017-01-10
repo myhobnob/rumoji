@@ -42,6 +42,12 @@ describe Rumoji do
         Rumoji.encode(emoji).must_equal num
       end
 
+      it "transforms emoji including the variation-selector-16" do
+        emoji = "♥️"
+        result = Rumoji.encode(emoji)
+        result.must_equal ":hearts:"
+      end
+
       it "does not encode double digits" do
         num = ":zero: :one: :two: :three: :four: :five: :six: :seven: :eight: :nine: :hash:"
         double_digits = "00 11 22 33 44 55 66 77 88 99 ##"

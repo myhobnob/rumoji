@@ -121,6 +121,7 @@ module Rumoji
       self.new("\u{1f528}", [:hammer]),
       self.new("\u{1f45c}", [:handbag]),
       self.new("\u{1f3a7}", [:headphones]),
+      self.new("\u{2665 FE0F}", [:hearts]),
       self.new("\u{2665}" , [:hearts]),
       self.new("\u{1f506}", [:high_brightness]),
       self.new("\u{1f460}", [:high_heel]),
