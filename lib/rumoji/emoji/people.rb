@@ -69,7 +69,7 @@ module Rumoji
       self.new("\u{1F49B}", [:yellow_heart]),
       self.new("\u{1F499}", [:blue_heart]),
       self.new("\u{1F49C}", [:purple_heart]),
-      self.new("\u{2764}" , [:heart], "HEAVY BLACK HEART"),
+      self.new("\u{2764}" , [:hearts_variation], "HEAVY BLACK HEART"),
       self.new("\u{2764 FE0F}" , [:heart], "HEAVY BLACK HEART"),
       self.new("\u{1F49A}", [:green_heart]),
       self.new("\u{1F494}", [:broken_heart]),

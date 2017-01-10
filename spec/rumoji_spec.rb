@@ -43,6 +43,13 @@ describe Rumoji do
       end
 
       it "transforms emoji including the variation-selector-16" do
+        str = "♥️"
+        emoji = "event name #{str}:"
+        result = Rumoji.encode(emoji)
+        result.must_equal "event name :hearts::"
+      end
+
+      it "transforms emoji including the variation-selector-16" do
         emoji = "♥️"
         result = Rumoji.encode(emoji)
         result.must_equal ":hearts:"
