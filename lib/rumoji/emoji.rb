@@ -52,7 +52,7 @@ module Rumoji
     # e.g. :man-man-boy: needs to come before :man: in the regex or else
     # :man-man-boy: will never be matched
     def <=>(other)
-      other.symbol <=> symbol
+      other.string <=> string
     end
 
     autoload :PEOPLE, 'rumoji/emoji/people'
