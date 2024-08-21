@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 
 require 'rumoji/emoji'
-require 'set'
+require 'sorted_set'
 
 module Rumoji
   class Emoji
-    NATURE = SortedSet[
+    NATURE = SortedSet.new [
       self.new("\u{2600}" , [:sunny], "BLACK SUN WITH RAYS"),
       self.new("\u{2614}" , [:umbrella], "UMBRELLA WITH RAIN DROPS"),
       self.new("\u{2601}" , [:cloud]),

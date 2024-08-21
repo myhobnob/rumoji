@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 
 require 'rumoji/emoji'
-require 'set'
+require 'sorted_set'
 
 module Rumoji
   class Emoji
-    PLACES = SortedSet[
+    PLACES = SortedSet.new [
       self.new("\u{1f6a1}", [:aerial_tramway]),
       self.new("\u{2708}" , [:airplane]),
       self.new("\u{1f691}", [:ambulance]),

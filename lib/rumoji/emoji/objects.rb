@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 
 require 'rumoji/emoji'
-require 'set'
+require 'sorted_set'
 
 module Rumoji
   class Emoji
-    OBJECTS = SortedSet[
+    OBJECTS = SortedSet.new [
       self.new("\u{1F38D}", [:bamboo], "PINE DECORATION"), # "Japanese new year's door decoration
       self.new("\u{1F49D}", [:gift_heart], "HEART WITH RIBBON"),
       self.new("\u{1F38E}", [:dolls], "JAPANESE DOLLS"), # "Japanese Hinamatsuri or girls' doll festival"
